@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake Twitter</title>
+    <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+</head>
+
+<body id="main">
+    <section id="section2">
+        <center>
+            <div class="form-container_2">
+                <h1 id="h1">Hello <i>
+                        <%- user %>!
+                    </i></h1>
+                <table>
+                    <tr>
+                        <td><a href="/logout">Logout</a>
+                        </td>
+                    </tr>
+                </table>
+                <div>
+                    <form action="/createTweet" method="POST" id="createTweet">
+                        <table>
+                            <tr>
+                                <td>
+                                    <textarea name="content" class="form-style" cols="50" rows="5"
+                                        placeholder="What's on your mind?" form="createTweet"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="control">
+                                        <input type="submit" value="Post">
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+                <div>
+                    <table>
+                        <% for (let t of tweets) { %>
+                            <tr>
+                                <td>
+                                    <strong id="username-tweet">
+                                        <%= t.dataValues.User.dataValues.username %>
+                                    </strong>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td id="time">
+                                    <%= t.dataValues.timeCreated %>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td id="content">
+                                    <%= t.dataValues.content%> %>
+                                </td>
+                            </tr>
+                            <% } %>
+                    </table>
+                </div>
+            </div>
+        </center>
+        <%- include('../partials/footer') %>
+    </section>
+</body>
+
+</html>

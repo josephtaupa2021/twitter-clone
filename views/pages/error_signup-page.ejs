@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake Twitter</title>
+    <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+</head>
+
+<body>
+    <section>
+
+        <div class="form-container">
+            <h1>Sign Up</h1>
+            <p class="error-message">
+                <%- error %>
+            </p>
+            <form action="/createUser" method="POST">
+                <div class="control">
+                    <input type="text" name="username" id="username" placeholder="Username">
+
+                </div>
+                <div class="control">
+                    <input type="password" name="password" id="password" placeholder="Password">
+                </div>
+                <div class="control">
+                    <input type="submit" value="Try again">
+                </div>
+            </form>
+            <p id="footer">If you already have an account, please <a href="/loginpage">Login</a></p>
+        </div>
+        <%- include('../partials/footer') %>
+    </section>
+</body>
+
+</html>

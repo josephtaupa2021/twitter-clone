@@ -1,0 +1,165 @@
+
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+
+table {
+    width:50%;
+}
+
+td {
+    padding: 5px;
+}
+
+#time {
+    color: white;
+    font-size: 12px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+#username-tweet {
+    color: white;
+    font-size: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+#content {
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+}
+#username, #password {
+    font-family: inherit;
+    font-size: inherit;
+    font-family:Arial, Helvetica, sans-serif;
+    outline: none;
+    border: none;
+}
+
+.form-style {
+    resize: none;
+    font-family: inherit;
+    font-size: inherit;
+    outline: none;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+}
+
+section{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: url('/img/login-wallpaper.jpg');
+    background-size:cover;
+    background-position: center center;
+}
+
+#section2 {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: url('/img/login-wallpaper (black).jpg');
+    background-size:cover;
+    background-position:inherit;
+
+}
+
+#main{
+    background-color: #0c171b;
+}
+.error-message {
+    color: red;
+}
+
+
+
+/* Transparent CSS style */
+
+.form-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(rgba(0,0,0,0.3)), rgba(0,0,0,0);
+    width: 380px;
+    padding: 50px 30px;
+    border-radius: 10px;
+    box-shadow: 7px 7px 60px #000;
+}
+
+.form-container_2{
+    position:absolute;
+    height: 100vh;
+    width: 1000px;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(rgba(0,0,0,0.3)), rgba(0,0,0,0);
+    padding: 50px 30px;
+    border-radius: 5px;
+    box-shadow: 7px 7px 60px #000;
+}
+
+#footer {
+        color: white;
+}
+h1{
+    text-transform: uppercase;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 2em;
+    color: white;
+}
+
+#h1{
+    text-transform:capitalize;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 2em;
+    color: #0c171b;
+}
+
+.control input{
+    width: 100%;
+    display: block;
+    padding: 10px;
+    color: #222;
+    border: none;
+    outline: none;
+    margin: 1em 0;
+}
+.control input[type="submit"]{
+    background: crimson;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    opacity: 0.7;
+    transition: opacity .3s ease;
+    border-radius: 20px;
+}
+.control input[type="submit"]:hover{
+    opacity: 1;
+}
+.link{
+    text-align: center;
+}
+.link a{
+    text-decoration: none;
+    color: #fff;
+    opacity: .6;
+    transition: opacity .3s ease ;
+}
+.link a:hover{
+    opacity: 1;
+}
+
+footer {
+    font-size: 10px;
+    color: white;
+    margin-left: 50px;
+}
